@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap');
+body{
+    background-color: rgb(175, 175, 17);
+    height: 100vh;
+    width: 100vw;
+    .main-container{
+        height: 100%;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        
+        #calc-container{
+            background-color: black;
+            height: 420px;
+            width: 280px;
+            display: grid;
+            grid-template-rows: 15% 85%;
+            border-radius: 20px;
+            padding: 14px;
+            #display{
+                background-color: honeydew;
+                margin-bottom: 10px;
+                border-radius: 20px;
+                background-color: #8c979a;
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                justify-content: flex-end;
+                padding-right: 20px;
+                font-family: 'Quicksand', sans-serif;
+                font-size:larger ;
+            }
+            #buttons{
+                display: grid;
+                grid-template-columns: repeat(4,1fr);
+                margin-top: 5px;
+                grid-gap: 5px;
+                button{
+                    border-radius:35%;
+                    background-color: #581830;
+                    border: 0px solid transparent;
+                    box-shadow: 4px 5px 5px 0px #151516;
+                    color: white;
+                    font-family: 'Quicksand', sans-serif;
+                    font-size: xx-large;
+                }
+                #modulus{
+                    background-color: #6a1d3a;
+                    position: relative;
+                    transition: top ease 0.1s;
+                }
+                #c{
+                    background-color: #7b2243;
+                    position: relative;
+                    transition: top ease 0.1s;
+                }
+                #ac{
+                    background-color: #8d264d;
+                    position: relative;
+                    transition: top ease 0.1s;
+                }
+                #ac:hover{
+                    top: -2px;
+                    background-color: rgb(175, 175, 17);
+                }
+                #plus{
+                    background-color: #6a1d3a;
+                    position: relative;
+                    transition: top ease 0.1s;
+                }
+                #minus{
+                    background-color: #7b2243;
+                    position: relative;
+                    transition: top ease 0.1s;
+                }
+                #into{
+                    background-color:#8d264d ;
+                    position: relative;
+                    transition: top ease 0.1s;
+                }
+                #equal{
+                    background-color: #9e2b56;
+                    position: relative;
+                    transition: top ease 0.1s;
+                }
+                #seven,#eight,#nine{
+                    background-color: #8c979a;
+                    position: relative;
+                    transition: top ease 0.1s;
+                }
+                #four,#five,#six{
+                    background-color: #6f7c80;
+                    position: relative;
+                    transition: top ease 0.1s;
+                }
+                #three,#two,#one{
+                    background-color: #555f61;
+                    top: 0;
+                    position: relative;
+                    transition: top ease 0.1s;
+                }
+                #three:hover,#two:hover,#one:hover,#four:hover,#five:hover,#six:hover,
+                #seven:hover,#eight:hover,#nine:hover,#zero:hover,#dot:hover,#double-zero:hover{
+                    top: -2px;
+                    background-color: rgb(175, 175, 17);
+                }
+                #zero,#double-zero,#dot{
+                    background-color:#373d3f ;
+                }
+                #divide{
+                    position: relative;
+                    transition: top ease 0.1s;
+                }
+                #modulus:hover,#c:hover,#into:hover,#plus:hover,#minus:hover,equal:hover,
+                #divide:hover,#equal:hover{
+                    top: -2px;
+                    background-color: rgb(175, 175, 17);
+                }
+            }
+        }
+
+    }
+}

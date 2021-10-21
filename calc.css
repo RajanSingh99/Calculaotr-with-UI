@@ -1,0 +1,174 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap");
+body {
+  background-color: #afaf11;
+  height: 100vh;
+  width: 100vw;
+}
+
+body .main-container {
+  height: 100%;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+body .main-container #calc-container {
+  background-color: black;
+  height: 420px;
+  width: 280px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 15% 85%;
+      grid-template-rows: 15% 85%;
+  border-radius: 20px;
+  padding: 14px;
+}
+
+body .main-container #calc-container #display {
+  background-color: honeydew;
+  margin-bottom: 10px;
+  border-radius: 20px;
+  background-color: #8c979a;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  padding-right: 20px;
+  font-family: 'Quicksand', sans-serif;
+  font-size: larger;
+}
+
+body .main-container #calc-container #buttons {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[4];
+      grid-template-columns: repeat(4, 1fr);
+  margin-top: 5px;
+  grid-gap: 5px;
+}
+
+body .main-container #calc-container #buttons button {
+  border-radius: 35%;
+  background-color: #581830;
+  border: 0px solid transparent;
+  -webkit-box-shadow: 4px 5px 5px 0px #151516;
+          box-shadow: 4px 5px 5px 0px #151516;
+  color: white;
+  font-family: 'Quicksand', sans-serif;
+  font-size: xx-large;
+}
+
+body .main-container #calc-container #buttons #modulus {
+  background-color: #6a1d3a;
+  position: relative;
+  -webkit-transition: top ease 0.1s;
+  transition: top ease 0.1s;
+}
+
+body .main-container #calc-container #buttons #c {
+  background-color: #7b2243;
+  position: relative;
+  -webkit-transition: top ease 0.1s;
+  transition: top ease 0.1s;
+}
+
+body .main-container #calc-container #buttons #ac {
+  background-color: #8d264d;
+  position: relative;
+  -webkit-transition: top ease 0.1s;
+  transition: top ease 0.1s;
+}
+
+body .main-container #calc-container #buttons #ac:hover {
+  top: -2px;
+  background-color: #afaf11;
+}
+
+body .main-container #calc-container #buttons #plus {
+  background-color: #6a1d3a;
+  position: relative;
+  -webkit-transition: top ease 0.1s;
+  transition: top ease 0.1s;
+}
+
+body .main-container #calc-container #buttons #minus {
+  background-color: #7b2243;
+  position: relative;
+  -webkit-transition: top ease 0.1s;
+  transition: top ease 0.1s;
+}
+
+body .main-container #calc-container #buttons #into {
+  background-color: #8d264d;
+  position: relative;
+  -webkit-transition: top ease 0.1s;
+  transition: top ease 0.1s;
+}
+
+body .main-container #calc-container #buttons #equal {
+  background-color: #9e2b56;
+  position: relative;
+  -webkit-transition: top ease 0.1s;
+  transition: top ease 0.1s;
+}
+
+body .main-container #calc-container #buttons #seven, body .main-container #calc-container #buttons #eight, body .main-container #calc-container #buttons #nine {
+  background-color: #8c979a;
+  position: relative;
+  -webkit-transition: top ease 0.1s;
+  transition: top ease 0.1s;
+}
+
+body .main-container #calc-container #buttons #four, body .main-container #calc-container #buttons #five, body .main-container #calc-container #buttons #six {
+  background-color: #6f7c80;
+  position: relative;
+  -webkit-transition: top ease 0.1s;
+  transition: top ease 0.1s;
+}
+
+body .main-container #calc-container #buttons #three, body .main-container #calc-container #buttons #two, body .main-container #calc-container #buttons #one {
+  background-color: #555f61;
+  top: 0;
+  position: relative;
+  -webkit-transition: top ease 0.1s;
+  transition: top ease 0.1s;
+}
+
+body .main-container #calc-container #buttons #three:hover, body .main-container #calc-container #buttons #two:hover, body .main-container #calc-container #buttons #one:hover, body .main-container #calc-container #buttons #four:hover, body .main-container #calc-container #buttons #five:hover, body .main-container #calc-container #buttons #six:hover,
+body .main-container #calc-container #buttons #seven:hover, body .main-container #calc-container #buttons #eight:hover, body .main-container #calc-container #buttons #nine:hover, body .main-container #calc-container #buttons #zero:hover, body .main-container #calc-container #buttons #dot:hover, body .main-container #calc-container #buttons #double-zero:hover {
+  top: -2px;
+  background-color: #afaf11;
+}
+
+body .main-container #calc-container #buttons #zero, body .main-container #calc-container #buttons #double-zero, body .main-container #calc-container #buttons #dot {
+  background-color: #373d3f;
+}
+
+body .main-container #calc-container #buttons #divide {
+  position: relative;
+  -webkit-transition: top ease 0.1s;
+  transition: top ease 0.1s;
+}
+
+body .main-container #calc-container #buttons #modulus:hover, body .main-container #calc-container #buttons #c:hover, body .main-container #calc-container #buttons #into:hover, body .main-container #calc-container #buttons #plus:hover, body .main-container #calc-container #buttons #minus:hover, body .main-container #calc-container #buttons equal:hover,
+body .main-container #calc-container #buttons #divide:hover, body .main-container #calc-container #buttons #equal:hover {
+  top: -2px;
+  background-color: #afaf11;
+}
+/*# sourceMappingURL=calc.css.map */
